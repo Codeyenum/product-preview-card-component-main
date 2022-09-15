@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);    
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product--container {
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;    
+    width: 90%;
+    max-width: 580px;
+    margin: 2rem auto;    
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;   
+    display: block; 
+}
+
+.product-details {
+    background-color: var(--white);
+    border-radius: 0 0 10px 10px;
+    padding: 1.5rem;
+}
+
+.product-details small {
+    color: var(--darkGrayishBlue);
+    letter-spacing: .25rem;
+}
+
+.product-description h1 {
+    color: var(--veryDarkBlue);
+    font-family: 'Fraunces', serif;
+    font-size: 1.95rem;
+    line-height: 1.95rem;
+    margin: 1rem 0;
+}
+
+.product-description p {
+    color: var(--darkGrayishBlue);
+    font-size: .875rem;
+    line-height: 1.4rem;    
+}
+
+.product-price {
+    color: var(--darkGrayishBlue);
+    display: flex;
+    align-items: center;
+    font-size: .85rem;
+    gap: 1.5rem;    
+    margin: 1rem 0;
+}
+
+.product-price strong {
+    color: var(--darkCyan);
+    font-family: 'Fraunces', serif;
+    font-size: 1.95rem;    
+}
+
+.product-details button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    border: none;
+    background-color: var(--darkCyan);
+    border-radius: 8px;
+    color: var(--white);
+    
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;    
+    padding: 1rem;
+    width: 100%;
+}
+
+.product-details button:hover {
+    background-color: hsl(157, 39%, 20%);
+}
+
+@media screen and (min-width:760px) {
+    .product--container {
+        border-radius: 10px;         
+        flex-direction: row;             
+        margin: 6rem auto;        
+        width: 100%;          
+    }
+
+    .product--container picture {
+        width: 50%;      
+    }
+
+    .product-img {
+        border-radius: 10px 0 0 10px;                 
+    }
+
+    .product-description h1, .product-price {
+        margin: 1.5rem 0;
+    }
+
+    .product-details {
+        border-radius: 0 10px 10px 0;  
+        padding: 1.5rem 2rem;        
+        width: 50%;      
+    }
+}
