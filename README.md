@@ -15,7 +15,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Product preview card component solution](https://www.frontendmentor.io/solutions/social-proof-section-w_p3bvJg0A)
+- Solution URL: [Product preview card component solution](https://www.frontendmentor.io/solutions/product-preview-card-component-qV_vrtvOPS)
 - Live Site URL: [Product preview card component](https://codeyenum.github.io/product-preview-card-component-main/)
 
 ## My process
