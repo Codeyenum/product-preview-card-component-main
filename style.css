@@ -55,7 +55,7 @@ main {
     letter-spacing: .25rem;
 }
 
-.product-description h1 {
+.product-description h2 {
     color: var(--veryDarkBlue);
     font-family: 'Fraunces', serif;
     font-size: 1.95rem;
@@ -122,7 +122,7 @@ main {
         border-radius: 10px 0 0 10px;                 
     }
 
-    .product-description h1, .product-price {
+    .product-description h2, .product-price {
         margin: 1.5rem 0;
     }
 
