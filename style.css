@@ -20,6 +20,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .product--container {
     border-radius: 10px;    
     display: flex;
